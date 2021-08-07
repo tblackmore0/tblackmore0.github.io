@@ -1,0 +1,43 @@
+.aboutDiv {
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(56, 50, 50);
+    margin: 0;
+    padding: 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: $highlightText;
+    @include flexCenter(row);
+
+    img {
+        width: auto;
+        height: 70vh;
+        border: solid;
+        border-width: 2px;
+        border-radius: 100%;
+        border-color: $highlightText;
+        object-fit: cover;
+    }
+
+}
+
+.aboutText {
+    @include flexCenter (column);
+    width: 70vw;
+    height: inherit;
+
+    h2 {
+        height: auto;
+        font-size: 6vh;
+        color: $highlightText;
+    }
+
+    p {
+        height: auto;
+        font-size: 3vh;
+        color: $primaryText;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+}

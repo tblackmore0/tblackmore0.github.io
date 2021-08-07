@@ -1,0 +1,296 @@
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 10vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #272424;
+}
+
+.navLinkSection {
+  width: 30vw;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navLinkDiv {
+  width: 33%;
+  height: inherit;
+  text-align: center;
+  padding-top: 3vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navLinkDiv p {
+  color: #02e499;
+  font-size: 2.5vh;
+  -webkit-transition: ease-in-out, 0.4s;
+  transition: ease-in-out, 0.4s;
+  margin: 0;
+  padding: 1vw;
+}
+
+.navLinkDiv p:hover {
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+.homeDiv {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10%;
+}
+
+.homeDiv .homeText {
+  height: 70vh;
+  width: 80vw;
+  gap: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+.homeDiv .homeText div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3%;
+}
+
+.homeDiv .homeText div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 12vh;
+  color: #fff8f4;
+}
+
+.homeDiv .homeText div p:hover {
+  cursor: default;
+}
+
+.homeDiv .homeText div p span:hover {
+  color: #02e499;
+  cursor: default;
+  -webkit-animation: move-text 0.3s ease-out;
+          animation: move-text 0.3s ease-out;
+}
+
+@-webkit-keyframes move-text {
+  0% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
+
+@keyframes move-text {
+  0% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+}
+
+.homeShape {
+  width: 0.5vw;
+  height: 60vh;
+  background-color: #02e499;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#firstWord {
+  margin-bottom: 15vh;
+}
+
+#secondWord {
+  margin-top: 15vh;
+}
+
+.arrowDiv {
+  height: 5vh;
+  width: 5vw;
+  -webkit-animation-name: arrow-bounce;
+          animation-name: arrow-bounce;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes arrow-bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes arrow-bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+.arrowDiv .homeArrow {
+  color: #fff8f4;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 1px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.arrowDiv .homeArrow::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.aboutDiv {
+  width: 100vw;
+  height: 80vh;
+  background-color: #383232;
+  margin: 0;
+  padding: 0;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #02e499;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutDiv img {
+  width: auto;
+  height: 70vh;
+  border: solid;
+  border-width: 2px;
+  border-radius: 100%;
+  border-color: #02e499;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  height: inherit;
+}
+
+.aboutText h2 {
+  height: auto;
+  font-size: 6vh;
+  color: #02e499;
+}
+
+.aboutText p {
+  height: auto;
+  font-size: 3vh;
+  color: #fff8f4;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.projectsDiv {
+  height: 100vh;
+  width: 100vw;
+  background-color: #272424;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #272424;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */
