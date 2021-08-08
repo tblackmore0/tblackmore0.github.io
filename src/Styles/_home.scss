@@ -1,15 +1,25 @@
 .homeDiv {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     @include flexCenter (column);
     gap: 10%;
 
+#particlesJs {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
 .homeText {
     height: 70vh;
-    width: 80vw;
+    width: 90vw;
     gap: 5%;
     @include flexCenter (row);
-    margin: 0;
+    margin-top: 10vh;
+    
     
 
     div {
@@ -24,6 +34,7 @@
         flex-direction: row;
         font-size: 12vh;
         color: $primaryText;
+        z-index: 3;
         
 
         &:hover {
@@ -87,7 +98,7 @@
     }
 
 .homeArrow {
-    color: $primaryText;
+    color: $highlightText;
     position: absolute;
     margin-left: 10px;
     margin-top: 2px;

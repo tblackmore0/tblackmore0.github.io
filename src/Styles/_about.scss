@@ -11,13 +11,12 @@
     @include flexCenter(row);
 
     img {
-        width: auto;
-        height: 70vh;
+        width: 25vw;
+        height: auto;
         border: solid;
         border-width: 2px;
         border-radius: 100%;
         border-color: $highlightText;
-        object-fit: cover;
     }
 
 }
