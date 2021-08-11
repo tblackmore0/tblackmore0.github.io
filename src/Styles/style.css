@@ -258,6 +258,24 @@
   border-color: #02e499;
 }
 
+.aboutTextDiv {
+  width: 70vw;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .aboutText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,14 +290,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70vw;
-  height: inherit;
+  width: inherit;
+  height: 37vh;
+  text-align: center;
 }
 
 .aboutText h2 {
   height: auto;
   font-size: 6vh;
   color: #02e499;
+  margin-bottom: 3vh;
 }
 
 .aboutText p {
@@ -288,6 +308,7 @@
   color: #fff8f4;
   margin-right: 5vw;
   margin-left: 5vw;
+  margin-top: 0.7vh;
 }
 
 .projectsDiv {
@@ -427,6 +448,227 @@
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.contactDiv {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2vh;
+  background-color: #383232;
+  border: solid;
+  border-width: 2px;
+  border-color: #02e499;
+}
+
+.contactDetails {
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10%;
+}
+
+.contactDetails .contactIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contactDetails img {
+  width: 4vw;
+  height: auto;
+}
+
+.contactDetails .contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactDetails .contactText h2 {
+  height: 4vh;
+  font-size: 6vh;
+  color: #02e499;
+}
+
+.contactDetails .contactText p {
+  height: auto;
+  font-size: 3vh;
+  color: #fff8f4;
+}
+
+.contactForm {
+  width: 90vw;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm form .formTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2vw;
+  width: 90vw;
+  height: 1vh;
+}
+
+.contactForm form .formTop input {
+  width: 20vw;
+  height: auto;
+  font-size: 2.3vh;
+  background-color: #272424;
+  color: #fff8f4;
+  border: none;
+}
+
+.contactForm form .formBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10%;
+  width: 100%;
+  height: 50vh;
+}
+
+.contactForm form .formBottom textarea {
+  width: 50vw;
+  font-size: 2vh;
+  height: 40vh;
+  background-color: #272424;
+  color: #fff8f4;
+  border: none;
+  resize: none;
+}
+
+.contactForm form button {
+  width: 5vw;
+  height: 4vh;
+  border: solid;
+  border-color: #02e499;
+  color: #02e499;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2vh;
+  background: none;
+  border-width: 2px;
+}
+
+.contactForm form button:hover {
+  cursor: pointer;
+  background-color: #02e499;
+  color: #272424;
+}
+
+.copyrightDiv {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #272424;
+}
+
+.copyrightDiv p {
+  font-size: 2.5vh;
+  color: #fff8f4;
+  font-weight: inherit;
 }
 
 body {

@@ -21,15 +21,26 @@
 
 }
 
-.aboutText {
-    @include flexCenter (column);
+
+.aboutTextDiv {
     width: 70vw;
     height: inherit;
+    @include flexCenter (column);
+
+}
+
+
+.aboutText {
+    @include flexCenter (column);
+    width: inherit;
+    height: 37vh;
+    text-align: center;
 
     h2 {
         height: auto;
         font-size: 6vh;
         color: $highlightText;
+        margin-bottom: 3vh;
     }
 
     p {
@@ -38,5 +49,6 @@
         color: $primaryText;
         margin-right: 5vw;
         margin-left: 5vw;
+        margin-top: 0.7vh;
     }
 }
